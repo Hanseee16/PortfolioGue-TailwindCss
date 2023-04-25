@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* hiro */
+.hiro {
+  background-image: linear-gradient(to right top, #051937, #002668, #00319b, #0038ce, #0038ff);
+}
+
+.hiro h1 {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.671);
+}
+
+.hiro p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.514);
+}
