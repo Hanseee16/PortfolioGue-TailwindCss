@@ -20,6 +20,7 @@
 
 ul.menu li a.active {
   color: #ffde38;
+  font-weight: 600;
 }
 
 /* hiro */
