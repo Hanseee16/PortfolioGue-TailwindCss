@@ -1,3 +1,11 @@
+:root {
+  /* color */
+  --biru: #0e1555;
+  --kuning: #ffd717;
+  --abu-abu: #7b7b7b;
+  --putih: #ffffff;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,15 +13,24 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* hiro */
-.hiro {
-  background-image: linear-gradient(to right top, #051937, #002668, #00319b, #0038ce, #0038ff);
+/* navbar */
+.navbar > div {
+  transition: all 1000ms ease-in-out;
 }
 
-.hiro h1 {
+ul.menu li a.active {
+  color: #ffde38;
+}
+
+/* hiro */
+#hiro {
+  /* background-image: linear-gradient(to right top, #051937, #002668, #00319b, #0038ce, #0038ff); */
+}
+
+#hiro h1 {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.671);
 }
 
-.hiro p {
+#hiro p {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.514);
 }
