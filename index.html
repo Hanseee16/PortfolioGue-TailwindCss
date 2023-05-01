@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <!-- Boxicons CSS -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <!-- navbar -->
@@ -47,7 +50,7 @@
             <li>
               <a
                 href="#hiro"
-                class="active active:text-black menu_active block py-2 pl-3 pr-4 lg:p-0 rounded text-gray-900 dark:text-white hover:text-white lg:hover:text-blue-700 lg:dark:hover:text-yellow-400 lg:hover:bg-transparent lg:dark:hover:bg-transparent hover:bg-blue-700 dark:hover:bg-yellow-400"
+                class="active menu_active block py-2 pl-3 pr-4 lg:p-0 rounded text-gray-900 dark:text-white hover:text-white lg:hover:text-blue-700 lg:dark:hover:text-yellow-400 lg:hover:bg-transparent lg:dark:hover:bg-transparent hover:bg-blue-700 dark:hover:bg-yellow-400"
                 aria-current="page"
                 >Home</a
               >
@@ -109,7 +112,7 @@
         <p class="mb-8 text-base font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">UI/UX Designer | Web Development</p>
         <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
           <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-100 rounded-lg shadow-lg bg-yellow-300 hover:bg-amber-400">
-            Selengkapnya
+            About
             <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
             </svg>
@@ -118,7 +121,7 @@
             href="#"
             class="inline-flex justify-center shadow-lg hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white dark:hover:border-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
           >
-            Hubungi Saya
+            Contact
           </a>
         </div>
       </div>
@@ -139,11 +142,11 @@
             <img src="dist/image/hiro/farhanKamil 1.png" alt="Farhan Kamil" class="rounded-md shadow-xl" />
           </div>
           <div class="md:w-80 lg:w-96">
-            <div class="pb-3 lg:pb-10">
+            <div class="pb-3 lg:pb-5">
               <h2 class="lg:text-xl text-gray-800 dark:text-gray-200">Hello I am Farhan Kamil, I am UI/UX Designer and Web Development from Depok, West Java.</h2>
             </div>
             <div class="flex justify-between pb-3 lg:pb-5 text-gray-800 dark:text-gray-200">
-              <div class="lg:text-base mt-0 lg:mt-5">
+              <div class="lg:text-base">
                 <p>Name:</p>
                 <p>Email:</p>
                 <p>Phone:</p>
@@ -159,13 +162,13 @@
               </div>
             </div>
             <div class="flex justify-between">
-              <button class="py-3 px-8 lg:px-16 bg-blue-700 dark:bg-yellow-400 hover:bg-blue-800 dark:hover:bg-yellow-500 text-white rounded-full">Hire me</button>
+              <button class="py-3 px-8 lg:px-10 bg-blue-700 dark:bg-yellow-400 hover:bg-blue-800 dark:hover:bg-yellow-500 text-white rounded-full">Hire me</button>
               <button class="py-3 px-8 border border-blue-700 dark:border-yellow-400 text-blue-700 dark:text-yellow-400 rounded-full">Download CV</button>
             </div>
           </div>
         </div>
 
-        <div class="flex flex-wrap md:justify-around md:items-center lg:justify-evenly lg:max-w-full">
+        <!-- <div class="flex flex-wrap md:justify-around md:items-center lg:justify-evenly lg:max-w-full">
           <div class="pb-4 md:pb-0 md:w-72 lg:w-96">
             <img src="dist/image/tentang/hanseee.jpg" alt="" />
           </div>
@@ -192,7 +195,7 @@
               <button class="py-3 md:py-2 px-9 md:px-5 border border-blue-700 dark:border-yellow-400 text-blue-700 dark:text-yellow-400 rounded-full">Download CV</button>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- end tentang -->
@@ -242,7 +245,47 @@
             <div class="bg-yellow-300 h-0.5 w-5 mx-auto rounded-full"></div>
           </div>
         </div>
-        <div class="flex flex-wrap justify-center gap-5">
+        <div class="carousel py-5">
+          <div class="carousel-item">
+            <div class="max-w-xs mx-4 bg-white dark:bg-transparent dark:text-white py-5 px-5">
+              <img src="dist/image/skills/html-1.svg" alt="" class="w-36 pb-2" />
+              <h2 class="text-center text-xl text-gray-700 dark:text-gray-50 font-semibold">Html</h2>
+            </div>
+            <div class="max-w-xs mx-4 bg-white dark:bg-transparent dark:text-white py-5 px-5">
+              <img src="dist/image/skills/css-3.svg" alt="" class="w-36 pb-2" />
+              <h2 class="text-center text-xl text-gray-700 dark:text-gray-50 font-semibold">Css</h2>
+            </div>
+            <div class="max-w-xs mx-4 bg-white dark:bg-transparent dark:text-white py-5 px-5">
+              <img src="dist/image/skills/javascript-1.svg" alt="" class="w-36 pb-2" />
+              <h2 class="text-center text-xl text-gray-700 dark:text-gray-50 font-semibold">Javascript</h2>
+            </div>
+            <div class="max-w-xs mx-4 bg-white dark:bg-transparent dark:text-white py-5 px-5">
+              <img src="dist/image/skills/bootstrap-5-1.svg" alt="" class="w-36 pb-2" />
+              <h2 class="text-center text-xl text-gray-700 dark:text-gray-50 font-semibold">Bootstrap</h2>
+            </div>
+            <div class="max-w-xs mx-4 bg-white dark:bg-transparent dark:text-white py-5 px-5">
+              <img src="dist/image/skills/tailwindcss.svg" alt="" class="w-36 pb-2" />
+              <h2 class="text-center text-xl text-gray-700 dark:text-gray-50 font-semibold">Tailwind Css</h2>
+            </div>
+            <div class="max-w-xs mx-4 bg-white dark:bg-transparent dark:text-white py-5 px-5">
+              <img src="dist/image/skills/react-2.svg" alt="" class="w-36 pb-2" />
+              <h2 class="text-center text-xl text-gray-700 dark:text-gray-50 font-semibold">React Js</h2>
+            </div>
+            <div class="max-w-xs mx-4 bg-white dark:bg-transparent dark:text-white py-5 px-5">
+              <img src="dist/image/skills/git-icon.svg" alt="" class="w-36 pb-2" />
+              <h2 class="text-center text-xl text-gray-700 dark:text-gray-50 font-semibold">Git</h2>
+            </div>
+            <div class="max-w-xs mx-4 bg-white dark:bg-transparent dark:text-white py-5 px-5">
+              <img src="dist/image/skills/figma-5.svg" alt="" class="w-36 pb-2" />
+              <h2 class="text-center text-xl text-gray-700 dark:text-gray-50 font-semibold">Figma</h2>
+            </div>
+            <div class="max-w-xs mx-4 bg-white dark:bg-transparent dark:text-white py-5 px-5">
+              <img src="dist/image/skills/mysql-3.svg" alt="" class="w-36 pb-2" />
+              <h2 class="text-center text-xl text-gray-700 dark:text-gray-50 font-semibold">MySQL</h2>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="flex flex-wrap justify-center gap-5">
           <div class="mb-10 mx-auto">
             <img src="dist/image/skills/html-1.svg" alt="Html" class="h-44" />
           </div>
@@ -264,7 +307,7 @@
           <div class="mb-10 mx-auto">
             <img src="dist/image/skills/figma-5.svg" alt="Javascript" class="h-44" />
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- end skills -->
@@ -274,12 +317,12 @@
       <div class="container">
         <div class="w-full pb-10 lg:pb-14">
           <div class="text-center">
-            <h1 class="font-semibold text-blue-700 dark:text-white text-xl md:text-3xl pb-1">Pengalaman</h1>
+            <h1 class="font-semibold text-blue-700 dark:text-white text-xl md:text-3xl pb-1">Resume</h1>
             <div class="bg-yellow-300 h-0.5 w-14 mx-auto rounded-full"></div>
           </div>
         </div>
-        <div class="flex flex-wrap md:justify-around">
-          <div class="pb-4 md:pb-0 md:w-80">
+        <div class="flex flex-wrap justify-evenly">
+          <div class="pb-4 md:pb-0 md:max-w-xs lg:max-w-xl">
             <div class="pb-5">
               <h1 class="text-lg text-gray-800 dark:text-white">Sekolah</h1>
               <div class="bg-blue-700 dark:bg-yellow-300 h-0.5 w-6 rounded-full"></div>
@@ -305,7 +348,7 @@
               </li>
             </ol>
           </div>
-          <div class="md:w-80">
+          <div class="md:max-w-xs lg:max-w-xl">
             <div class="pb-5">
               <h1 class="text-lg text-gray-800 dark:text-white">Pekerjaan</h1>
               <div class="bg-blue-700 dark:bg-yellow-300 h-0.5 w-6 rounded-full"></div>
@@ -327,12 +370,94 @@
     <!-- projects -->
     <section id="projects" class="projects py-36 bg-white dark:bg-gray-900">
       <div class="container">
-        <div class="w-full pb-10 lg:pb-14">
+        <div class="w-full pb-10 lg:pb-8">
           <div class="text-center">
-            <h1 class="font-semibold text-blue-700 dark:text-white text-xl md:text-3xl">Projects</h1>
+            <h1 class="font-semibold text-blue-700 dark:text-white text-xl md:text-2xl pb-2">Projects</h1>
             <div class="bg-yellow-300 h-0.5 w-10 mx-auto rounded-full"></div>
           </div>
         </div>
+        <div class="carousel py-5">
+          <div class="carousel-item">
+            <div class="max-w-xs mx-4 rounded-lg shadow-xl bg-white dark:bg-gray-800 dark:text-white">
+              <img src="dist/image/projects/project-1.png" alt="" />
+              <div class="text-center py-4">
+                <h2 class="text-xl text-gray-700 dark:text-gray-50 font-semibold pb-3">Green House</h2>
+                <p class="text-sm pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nihil?</p>
+                <a href="https://hanseee16.github.io/GreenHouse-Responsive/" target="_blank">
+                  <button class="bg-blue-700 dark:bg-yellow-400 hover:bg-blue-800 dark:hover:bg-yellow-500 py-2 px-7 text-white rounded-full mb-3">Live Demo</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="max-w-xs mx-4 rounded-lg shadow-xl bg-white dark:bg-gray-800 dark:text-white">
+              <img src="dist/image/projects/Screenshot (632).png" alt="" />
+              <div class="text-center py-4">
+                <h2 class="text-xl text-gray-700 dark:text-gray-50 font-semibold pb-3">Review Book</h2>
+                <p class="text-sm pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nihil?</p>
+                <a href="https://hanseee16.github.io/ReviewBook/" target="_blank">
+                  <button class="bg-blue-700 dark:bg-yellow-400 hover:bg-blue-800 dark:hover:bg-yellow-500 py-2 px-7 text-white rounded-full mb-3">Live Demo</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="max-w-xs mx-4 rounded-lg shadow-xl bg-white dark:bg-gray-800 dark:text-white">
+              <img src="dist/image/projects/Screenshot (633).png" alt="" />
+              <div class="text-center py-4">
+                <h2 class="text-xl text-gray-700 dark:text-gray-50 font-semibold pb-3">Teras Reptile</h2>
+                <p class="text-sm pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nihil?</p>
+                <a href="https://hanseee16.github.io/TokoReptil-Bootstrap/" target="_blank" class="object-cover">
+                  <button class="bg-blue-700 dark:bg-yellow-400 hover:bg-blue-800 dark:hover:bg-yellow-500 py-2 px-7 text-white rounded-full mb-3">Live Demo</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="max-w-xs mx-4 rounded-lg shadow-xl bg-white dark:bg-gray-800 dark:text-white">
+              <img src="dist/image/projects/Screenshot (634).png" alt="" />
+              <div class="text-center py-4">
+                <h2 class="text-xl text-gray-700 dark:text-gray-50 font-semibold pb-3">Portfolio</h2>
+                <p class="text-sm pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nihil?</p>
+                <a href="https://hanseee16.github.io/Portfolio-FarhanKamil/" target="_blank">
+                  <button class="bg-blue-700 dark:bg-yellow-400 hover:bg-blue-800 dark:hover:bg-yellow-500 py-2 px-7 text-white rounded-full mb-3">Live Demo</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="flex flex-wrap justify-evenly">
+          <div class="rounded-lg shadow-xl bg-white dark:bg-gray-800 dark:text-white max-w-xs">
+            <img src="dist/image/projects/project1.png" alt="" />
+            <div class="text-center py-4">
+              <h2 class="text-xl font-semibold pb-3">Green House</h2>
+              <p class="text-sm pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nihil?</p>
+              <a href="#">
+                <button class="bg-blue-700 dark:bg-yellow-400 hover:bg-blue-800 dark:hover:bg-yellow-500 py-2 px-7 text-white rounded-full mb-3">Live Demo</button>
+              </a>
+            </div>
+          </div>
+          <div class="rounded-lg shadow-xl bg-white dark:bg-gray-800 dark:text-white max-w-xs">
+            <img src="dist/image/projects/project1.png" alt="" />
+            <div class="text-center py-4">
+              <h2 class="text-xl font-semibold pb-3">Green House</h2>
+              <p class="text-sm pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nihil?</p>
+              <a href="#">
+                <button class="bg-blue-700 dark:bg-yellow-400 hover:bg-blue-800 dark:hover:bg-yellow-500 py-2 px-7 text-white rounded-full mb-3">Live Demo</button>
+              </a>
+            </div>
+          </div>
+          <div class="rounded-lg shadow-xl bg-white dark:bg-gray-800 dark:text-white max-w-xs">
+            <img src="dist/image/projects/project1.png" alt="" />
+            <div class="text-center py-4">
+              <h2 class="text-xl font-semibold pb-3">Green House</h2>
+              <p class="text-sm pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nihil?</p>
+              <a href="#">
+                <button class="bg-blue-700 dark:bg-yellow-400 hover:bg-blue-800 dark:hover:bg-yellow-500 py-2 px-7 text-white rounded-full mb-3">Live Demo</button>
+              </a>
+            </div>
+          </div>
+        </div> -->
       </div>
     </section>
     <!-- end projetcs -->
@@ -501,6 +626,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <!-- js -->
     <script src="dist/js/script.js"></script>
+    <!-- daisy ui -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </body>
 </html>
 
